@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps System Monitor</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>🚀 DevOps System Monitor</h1>
+
+        <p>
+            AWS EC2 • Docker • Jenkins • Prometheus • Grafana
+        </p>
+
+    </header>
+
+
+    <section class="status-card">
+
+        <div class="status-dot"></div>
+
+        <div>
+
+            <h2>Application Status</h2>
+
+            <p class="healthy">
+                🟢 HEALTHY
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h3>🖥️ Hostname</h3>
+
+            <p>{{ hostname }}</p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>⚙️ Platform</h3>
+
+            <p>{{ platform }}</p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>⏱️ Uptime</h3>
+
+            <p>{{ uptime }}</p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>📦 Version</h3>
+
+            <p>{{ version }}</p>
+
+        </div>
+
+    </section>
+
+
+    <section class="system">
+
+        <h2>System Status</h2>
+
+        <div class="system-status">
+
+            🟢 All systems operational
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            DevOps Monitoring Platform
+        </p>
+
+        <p>
+            Built with Python + Flask + Docker
+        </p>
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
